@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <!-- <button id="btn">click me</button> -->
+  <form id="form1">
+    <label>USERNAME :</label>
+    <input type="text" id="ip1" /><br /><br />
+    <label>PASSWORD :</label>
+    <input type="text" id="ip2" /><br /><br />
+    <label>RE-ENTERPASSWORD :</label>
+    <input tpe="text" id="ip3" /><br /><br />
+    <button id="sub">SUBMIT</button>
+  </form>
+  <body>
+    <script>
+              // btn=document.getElementById("btn")
+              // btn.addEventListener("click",()=>{
+              //     // localStorage.setItem("name","Yaswanth")
+              //     // localStorage.setItem("section","11R")
+              //     // localStorage.setItem("Institute","10KCoders")
+              //     // localStorage.setItem("Location","HYD")
+              // sessionStorage.getItem("name")
+
+
+
+              // }) -->
+      form1=document.getElementById("form1")
+      sub=document.getElementById("sub")
+
+
+
+      sub.addEventListener("click",(e)=>{
+          e.preventDefault()
+          ip1=document.getElementById("ip1").value
+      ip2=document.getElementById("ip2").value
+      ip3=document.getElementById("ip3").value
+      localStorage.setItem("USERNAME",ip1)
+      localStorage.setItem("PASSWORD",ip2)
+      localStorage.setItem("RE-ENTERPASSWORD",ip3)
+
+
+
+
+      })
+    </script>
+  </body>
+</html>
